@@ -22,5 +22,9 @@ app.get('/about', (req, res) => {
       res.render('about', { text : 'About Page'})
 });
 
+app.get('/icedmocha', (req, res) => {
+      res.render('icedmocha')
+});
+
 // Listen on port 3000
 app.listen(port, () => console.info(`App listening on port ${port}`));
